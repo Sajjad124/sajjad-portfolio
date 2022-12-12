@@ -8,7 +8,7 @@ import styled from "styled-components";
 const header = () => {
   return (
     <MainHeader>
-      <h2>Sajjad Saroya | ReactJs Developer</h2>
+      <span>Sajjad Saroya | ReactJs Developer</span>
       <NavLink to="./">
         {/* <img src={logo} alt="logo" width="250px" height="70" className="logo" /> */}
       </NavLink>
@@ -18,15 +18,19 @@ const header = () => {
 };
 
 const MainHeader = styled.header`
-  padding: 0 4.8rem;
+  padding: 4.2rem;
   height: 10rem;
   background-color: ${({ theme }) => theme.colors.bg};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h2 {
+  span {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    background-color: black;
   }
 `;
 export default header;
