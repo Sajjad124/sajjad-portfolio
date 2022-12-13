@@ -18,7 +18,7 @@ const header = () => {
 };
 
 const MainHeader = styled.header`
-  padding: 4.2rem;
+  padding: 3.2rem;
   height: 10rem;
   background-color: ${({ theme }) => theme.colors.bg};
   display: flex;
