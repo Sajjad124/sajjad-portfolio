@@ -10,7 +10,7 @@ const header = () => {
     <MainHeader>
       <span>Sajjad Saroya | ReactJs Developer</span>
       <NavLink to="./">
-        {/* <img src={logo} alt="logo" width="250px" height="70" className="logo" /> */}
+        <img src={logo} alt="logo" width="250px" height="70" className="logo" />
       </NavLink>
       <Navbar />
     </MainHeader>
