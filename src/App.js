@@ -35,7 +35,7 @@ const App = () => {
   };
   return (
     <ThemeProvider theme={theme}>
-    <GlobalStyle/>
+      <GlobalStyle />
       <BrowserRouter>
         <Header />
         <Routes>
