@@ -18,11 +18,51 @@ const HeroSection = () => {
           <NavLink to="/contact ">hire me</NavLink>
         </Button>
         {/* for image */}
-        <div className="section-hero-image"></div>
+        <div className="section-hero-image">
+          <picture>
+            <img src="./Images/hero.svg" alt="" />
+          </picture>
+        </div>
       </div>
     </Wrapper>
   );
 };
 
-const Wrapper = styled.section``;
+const Wrapper = styled.section`
+  padding: 9rem 0;
+  .section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn-width: 16rem;
+  .hero-top-data {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: "#8490ff";
+  }
+  .hero-heading {
+    text-transform: uppercase;
+    font-size: 6.4rem;
+    font-size: 6rem;
+    font-weight: 900;
+  }
+  .hero-para {
+    margin-top: 1.5rem;
+    margin-bottom: 3.4rem;
+    max-width: 60rem;
+  }
+  .section-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  picture {
+    text-align: center;
+  }
+  .hero-img {
+    max-width: 80%;
+  }
+`;
 export default HeroSection;
